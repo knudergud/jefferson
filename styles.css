@@ -471,9 +471,8 @@ blockquote {
 }
 .portrait-figure img {
   display: block;
-  width: 100%;
-  max-width: 260px;
-  aspect-ratio: 3/4;
+  width: 220px;
+  height: 293px;
   object-fit: cover;
   object-position: top center;
   border: 3px solid rgba(18, 50, 74, 0.15);
@@ -532,6 +531,7 @@ blockquote {
     gap: 2rem;
   }
   .portrait-figure img {
-    max-width: 200px;
+    width: 180px;
+    height: 240px;
   }
 }
