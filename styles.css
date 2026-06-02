@@ -464,3 +464,74 @@ blockquote {
   .split-section,
   .section-heading { padding: 58px 0; }
 }
+
+/* ── Portrait in hero card ── */
+.portrait-figure {
+  margin-bottom: 1.5rem;
+}
+.portrait-figure img {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: top center;
+  border: 3px solid rgba(18, 50, 74, 0.15);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+  filter: sepia(8%) contrast(1.04);
+  margin: 0 auto;
+}
+.portrait-figure figcaption {
+  font-size: 0.72rem;
+  color: var(--fg-muted, #6b6b6b);
+  text-align: center;
+  margin-top: 0.5rem;
+  font-style: italic;
+  letter-spacing: 0.03em;
+}
+
+/* ── Visual feature (Monticello) ── */
+.visual-feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+.feature-image {
+  margin: 0;
+}
+.feature-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+.feature-image figcaption {
+  font-size: 0.72rem;
+  color: var(--fg-muted, #6b6b6b);
+  margin-top: 0.6rem;
+  font-style: italic;
+  letter-spacing: 0.03em;
+}
+.feature-copy h2 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  margin: 0.5rem 0 1rem;
+  line-height: 1.2;
+}
+.feature-copy p {
+  color: var(--fg-muted, #555);
+  line-height: 1.75;
+}
+
+@media (max-width: 860px) {
+  .visual-feature {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .portrait-figure img {
+    max-width: 200px;
+  }
+}
